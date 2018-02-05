@@ -32,7 +32,7 @@ public class RegistrationServer extends javax.swing.JFrame {
     protected int DEFAULT_PORT = 8903;
     String host;
     int port;
-    ListenServer listen;
+    ListenServer listenServer;
     /** Creates new form RegistrationServer */
     public RegistrationServer()
     {
@@ -169,8 +169,8 @@ public class RegistrationServer extends javax.swing.JFrame {
 
     private void jButtonStartServerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonStartServerActionPerformed
     {//GEN-HEADEREND:event_jButtonStartServerActionPerformed
-        listen = new ListenServer(this);
-        listen.start();
+        listenServer = new ListenServer(this);
+        listenServer.start();
     }//GEN-LAST:event_jButtonStartServerActionPerformed
 
     private void jButtonStopServerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonStopServerActionPerformed
