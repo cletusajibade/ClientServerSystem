@@ -29,7 +29,7 @@ import static  dlcf_registration.DataBaseHandler.*;
 public class RegistrationServer extends javax.swing.JFrame {
 
     protected String DEFAULT_HOST = "127.0.0.1";
-    protected int DEFAULT_PORT = 8902;
+    protected int DEFAULT_PORT = 8903;
     String host;
     int port;
     ListenServer listen;
