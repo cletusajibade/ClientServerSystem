@@ -51,12 +51,13 @@ public class RegistrationServer extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonStartServer = new javax.swing.JButton();
+        jButtonStopServer = new javax.swing.JButton();
         portDisplay = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         logDisplay = new javax.swing.JTextArea();
@@ -71,17 +72,21 @@ public class RegistrationServer extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("Start");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        jButtonStartServer.setText("Start");
+        jButtonStartServer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonStartServerActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Stop");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+        jButtonStopServer.setText("Stop");
+        jButtonStopServer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonStopServerActionPerformed(evt);
             }
         });
 
@@ -91,25 +96,25 @@ public class RegistrationServer extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(159, 159, 159)
-                .addComponent(jButton1)
+                .addComponent(jButtonStartServer)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
+                .addComponent(jButtonStopServer)
                 .addContainerGap(188, Short.MAX_VALUE))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButtonStartServer, jButtonStopServer});
 
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(jButtonStartServer)
+                    .addComponent(jButtonStopServer))
                 .addContainerGap())
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jButton2});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButtonStartServer, jButtonStopServer});
 
         logDisplay.setColumns(20);
         logDisplay.setRows(5);
@@ -162,16 +167,16 @@ public class RegistrationServer extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
+    private void jButtonStartServerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonStartServerActionPerformed
+    {//GEN-HEADEREND:event_jButtonStartServerActionPerformed
         listen = new ListenServer(this);
         listen.start();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonStartServerActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
-    {//GEN-HEADEREND:event_jButton2ActionPerformed
+    private void jButtonStopServerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonStopServerActionPerformed
+    {//GEN-HEADEREND:event_jButtonStopServerActionPerformed
         //System.exit(0);//dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonStopServerActionPerformed
     class ListenServer extends Thread
     {
 
@@ -367,8 +372,8 @@ public class RegistrationServer extends javax.swing.JFrame {
     }  // end main
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonStartServer;
+    private javax.swing.JButton jButtonStopServer;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
