@@ -50,17 +50,17 @@ public class DataBaseHandler
             Logger.getLogger(DataBaseHandler.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    public  static void createDataBase(String dbName)
+    public  static void createDataBase(String DBName)
     {
         connectToDatabase("mysql","root","");
-        String query = "CREATE DATABASE IF NOT EXISTS "+dbName;
+        String query = "CREATE DATABASE IF NOT EXISTS "+DBName;
         try
         {
             pst = con.prepareStatement(query);
             int resp =  pst.executeUpdate();
             if(resp != -1)
             {
-                System.out.println("Database \""+dbName+"\" created ");
+                System.out.println("Database \""+DBName+"\" created ");
             }
 
             pst.close();
