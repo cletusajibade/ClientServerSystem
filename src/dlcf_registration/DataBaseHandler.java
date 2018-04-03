@@ -30,7 +30,9 @@ public class DataBaseHandler
     {
         try
         {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            String name = "com.mysql.jdbc.Driver";
+
+            Class.forName(name).newInstance();
             System.out.println("Driver Loaded");
         }
         catch(Exception ex)
